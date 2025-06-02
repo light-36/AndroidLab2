@@ -1,57 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:rowCount="3"
+    android:rowCount="4"
     android:columnCount="4"
     android:layout_height="match_parent">
 
-
-    <Button android:id="@+id/button1"
-
+    <TextView
+        android:id="@+id/firstText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="3"
-        android:text="@string/item1" />
-
-    <Button android:id="@+id/button2"
-        android:layout_columnSpan="3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:text="@string/item2" />
-
-    <Button android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="@string/love"
         android:layout_column="0"
-        android:layout_row="1"
-        android:layout_columnWeight="1"
-        android:text="@string/item3" />
+        android:layout_row="0"
+        android:layout_marginBottom="10dp"/>
 
-    <Button android:id="@+id/button4"
+    <ImageButton
+        android:id="@+id/imageBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:src="@drawable/flag"
+        android:layout_column="1"
+        android:layout_row="0"
+        android:layout_columnSpan="2"
+        android:layout_rowSpan="2"
+        android:layout_gravity="fill"
+        android:layout_marginBottom="10dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/switchItUp"
+        android:layout_marginBottom="10dp"
+        android:layout_column="0"
+        android:layout_row="1"/>
+
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/pressBtn"
+        android:layout_marginBottom="10dp"
+        android:layout_column="0"
+        android:layout_row="2"/>
+
+    <CheckBox
+        android:id="@+id/checkb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/chkOut"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
         android:layout_column="2"
-        android:layout_row="1"
-        android:layout_columnWeight="1"
-        android:text="@string/item4" />
+        android:layout_row="2"/>
 
-    <Button android:id="@+id/button5"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/firstEditText"
+        android:hint="@string/love"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:text="@string/item5" />
-
-    <Button android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:text="@string/item6" />
-
-    <Button android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_columnWeight="1"
-        android:text="@string/item7" />
-
+        android:layout_marginBottom="10dp"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:layout_columnSpan="4"/>
 </GridLayout>
