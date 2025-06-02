@@ -33,15 +33,21 @@ public class MainActivity extends AppCompatActivity {
         theEdit.setText(message);
 
         final Button btn = findViewById(R.id.myButton);
-        btn.setText("New strings");
-        btn.setOnClickListener( (click) ->  { btn.setText("You clicked me"); }  );
+        String toastMessage = getResources().getString(R.string.toast_message);
+        btn.setOnClickListener( (click) ->  {
+            firstText.setText(theEdit.getText());
+            Toast.makeText(this,
+                     toastMessage,
+                    Toast.LENGTH_SHORT).show();
+        }  );
 
 
         CheckBox cb = findViewById(R.id.checkb);
+        View mainView = findViewById(android.R.id.content);
         cb.setOnCheckedChangeListener( (compoundButton, b) -> {
 
             //  Toast.makeText(MainActivity.this, "Checkbox is " + b, Toast.LENGTH_LONG).show();
-            Snackbar.make(theEdit, "Checkbox is " + b, Snackbar.LENGTH_LONG)
+            Snackbar.make(mainView, "Checkbox is now " + b, Snackbar.LENGTH_LONG)
                     .setAction("Undo", click-> compoundButton.setChecked( !b ))
                     .show();
 

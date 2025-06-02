@@ -12,4 +12,8 @@
     <string name="item5">5</string>
     <string name="item6">6</string>
     <string name="item7">7</string>
+    <string name="love">I love Android</string>
+    <string name="pressBtn">PRESS ME</string>
+    <string name="chkOut">Check this out!</string>
+    <string name="toast_message">Label has been updated.</string>
 </resources>

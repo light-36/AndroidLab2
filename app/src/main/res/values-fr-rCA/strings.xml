@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">InClassExamples_W20</string>
+    <string name="hello">Bonjour le monde</string>
+    <string name="checkbox">Ceci est une case à cocher</string>
+    <string name="hint">Cet indice disparaît</string>
+    <string name="switchItUp">Ceci est un interrupteur</string>
+    <string name="radio">Bouton radio</string>
+    <string name="item1">1</string>
+    <string name="item2">2</string>
+    <string name="item3">3</string>
+    <string name="item4">4</string>
+    <string name="item5">5</string>
+    <string name="item6">6</string>
+    <string name="item7">7</string>
+    <string name="love">J\'adore Android</string>
+    <string name="pressBtn">APPUYEZ MOI</string>
+    <string name="chkOut">Regardez ça !</string>
+    <string name="toast_message">L\'étiquette a été mise à jour.</string>
+</resources>
